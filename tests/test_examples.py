@@ -6,8 +6,9 @@ import trml2pdf  # dev mode: python setup.py develop
 from six import text_type
 
 
-EXAMPLES_DIR = "examples"
 TESTS_DIR = os.path.dirname(os.path.realpath(__file__))
+PARENT_DIR =  os.path.abspath(os.path.join(TESTS_DIR, os.pardir))
+EXAMPLES_DIR = os.path.join(PARENT_DIR, 'examples')
 
 # sys.path.append(EXAMPLES_DIR)
 
